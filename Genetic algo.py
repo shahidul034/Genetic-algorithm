@@ -9,7 +9,7 @@ def initialize():
         cromosome.append(array)
     return cromosome
 
-def calcuate_fit(cromo):
+def calculate_fit(cromo):
     flag=0
     val=0
     if cromo[0]==1:
@@ -28,7 +28,7 @@ def fitness(crr):
     dd_fit=[]
     dec_val=[]
     for x in crr:
-        val,cr=calcuate_fit(x)
+        val,cr=calculate_fit(x)
         print("fitness :",val," and ","decimal value: ",cr)
         dd_fit.append(val)
         dec_val.append(cr)
@@ -81,6 +81,9 @@ while(1):
         break
     cross_val=crossover(new_sel)
     muted_value=mutation(cross_val)
+    cr=muted_value
+
+
 
 
 
